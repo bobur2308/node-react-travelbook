@@ -2,12 +2,12 @@ const Travel = require('../models/travelModel')
 // method -get, descr-getalltravelbook
 const getAllTravel = async(req,res)=>{
   try {
-    const travel = await Travel.find()
-    
+    const travels = await Travel.find()
     return res.status(200).json({
       message:'succes',
-      travel
+      travels:travels.reverse()
     })
+    
   } catch (err) {
     res.send(err)
   }
