@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Travel = require('../models/travelModel')
+	
 const {
   getAllTravel,
   getTravelById,
